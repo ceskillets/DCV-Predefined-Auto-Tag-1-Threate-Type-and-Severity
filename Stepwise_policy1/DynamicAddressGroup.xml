@@ -1,0 +1,8 @@
+<entry name="StrictSourceIP">
+    <dynamic>
+        <filter>'{{ tag_name }}'</filter>
+    </dynamic>
+    <tag>
+        <member>{{ tag_name }}</member>
+    </tag>
+</entry>

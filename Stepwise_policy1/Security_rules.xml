@@ -1,0 +1,108 @@
+<entry name="StrictPolicyforStrictServer" uuid="68418a0f-2ff7-4817-805a-dd02cd73ca2e">
+    <profile-setting>
+    <profiles>
+    <url-filtering>
+        <member>default</member>
+    </url-filtering>
+    <file-blocking>
+        <member>strict file blocking</member>
+    </file-blocking>
+    <virus>
+        <member>default</member>
+    </virus>
+    <spyware>
+        <member>strict</member>
+    </spyware>
+    <vulnerability>
+        <member>strict</member>
+    </vulnerability>
+    <wildfire-analysis>
+        <member>default</member>
+    </wildfire-analysis>
+    </profiles>
+    </profile-setting>
+<to>
+    <member>any</member>
+</to>
+<from>
+    <member>any</member>
+</from>
+<source>
+    <member>StrictSourceIP</member>
+</source>
+<destination>
+    <member>any</member>
+</destination>
+<source-user>
+    <member>any</member>
+</source-user>
+<category>
+    <member>any</member>
+</category>
+<application>
+    <member>any</member>
+</application>
+<service>
+    <member>application-default</member>
+</service>
+<hip-profiles>
+    <member>any</member>
+</hip-profiles>
+<tag>
+    <member>{{ tag_name }}</member>
+</tag>
+<action>allow</action>
+</entry>
+<entry name="basepolicy" uuid="f62ffd9f-bd1f-485b-9184-c9c9f0d844ba">
+    <profile-setting>
+    <profiles>
+    <url-filtering>
+        <member>default</member>
+    </url-filtering>
+    <file-blocking>
+        <member>basic file blocking</member>
+    </file-blocking>
+    <virus>
+        <member>default</member>
+    </virus>
+    <spyware>
+        <member>default</member>
+    </spyware>
+    <vulnerability>
+        <member>default</member>
+    </vulnerability>
+    <wildfire-analysis>
+        <member>default</member>
+    </wildfire-analysis>
+    </profiles>
+    </profile-setting>
+    <to>
+        <member>any</member>
+    </to>
+    <from>
+        <member>any</member>
+    </from>
+    <source>
+        <member>any</member>
+    </source>
+    <destination>
+        <member>any</member>
+    </destination>
+    <source-user>
+        <member>any</member>
+    </source-user>
+    <category>
+        <member>any</member>
+    </category>
+    <application>
+        <member>any</member>
+    </application>
+    <service>
+        <member>application-default</member>
+    </service>
+    <hip-profiles>
+        <member>any</member>
+    </hip-profiles>
+    <action>allow</action>
+    <log-setting>Addtag_to_Adjust_SecPolicy</log-setting>
+</entry>

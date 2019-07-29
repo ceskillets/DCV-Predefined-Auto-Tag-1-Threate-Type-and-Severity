@@ -1,0 +1,4 @@
+<entry name="{{ tag_name }}">
+    <color>{{ tag_color }}</color>
+    <comments>This is stricted policy tag</comments>
+</entry>

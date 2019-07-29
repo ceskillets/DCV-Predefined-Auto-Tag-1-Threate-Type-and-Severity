@@ -1,0 +1,26 @@
+<entry name="Addtag_to_Adjust_SecPolicy">
+    <match-list>
+        <entry name="change_to_strict">
+            <actions>
+                <entry name="AddRedTag">
+                    <type>
+                        <tagging>
+                            <registration>
+                                <localhost/>
+                            </registration>
+                            <tags>
+                                <member>{{ tag_name }}</member>
+                            </tags>
+                            <target>destination-address</target>
+                            <action>add-tag</action>
+                            <timeout>0</timeout>
+                        </tagging>
+                    </type>
+                </entry>
+            </actions>
+            <log-type>threat</log-type>
+            <filter>((threat-type eq vulnerability) or (threat-type eq scan) or (threat-type eq wildfire-virus) or (threat-type eq spyware) or (threat-type eq attack)) and (severity geq medium)</filter>
+            <send-to-panorama>no</send-to-panorama>
+        </entry>
+    </match-list>
+</entry>
